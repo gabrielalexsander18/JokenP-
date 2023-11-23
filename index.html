@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Jokenpô</title>
+</head>
+
+<body>
+    <div class="background_escuro">
+        <img src="./assets/logo-portfolio.png" />
+        <h1>JokenPô</h1>
+        <div class="container">
+            <div class="buttons">
+                <button class="rockButton" onclick="playHuman('rock')">&#x270A;</button>
+                <button class="paperButton" onclick="playHuman('paper')">&#x270B;</button>
+                <button class="scissorsButton" onclick="playHuman('scissors')">&#x270C;</button>
+            </div>
+            <p class="result"><b></b></p>
+
+            <p class="pontuacion">Sua pontuação: <span id="humanScore">0</span></p>
+            <p class="pontuacion">Pontuação adversário: <span id="machineScore">0</span></p>
+        </div>
+    </div>
+</body>
+
+<script src="./index.js"></script>
+
+</html>
